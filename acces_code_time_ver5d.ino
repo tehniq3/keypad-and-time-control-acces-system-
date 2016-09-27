@@ -115,7 +115,7 @@ byte ceas4[8] = {
 
 byte inchora = 20;  // autoclose hours
 byte inchmin = 46;  // autocloese minutes
-byte deschora = 20; // autoopen hours
+byte deschora = 7; // autoopen hours
 byte deschmin = 47; // autopen minutes
 
 void setup()
