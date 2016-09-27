@@ -321,9 +321,13 @@ void keypadEvent(KeypadEvent eKey){
 //    Serial.println("Success");
      //Add code to run if it works
 //  if (digitalRead(mastercod) == LOW) digitalWrite(mastercod, HIGH); else digitalWrite(mastercod, LOW);
-    if ((digitalRead(asteptare) == LOW) && (digitalRead(mastercod) == HIGH)) digitalWrite(mastercod, LOW);
-    else digitalWrite(mastercod, HIGH);
-    
+//    if ((digitalRead(asteptare) == LOW) && (digitalRead(mastercod) == HIGH)) digitalWrite(mastercod, LOW);
+//    else digitalWrite(mastercod, HIGH);
+    if (digitalRead(asteptare) == LOW)
+   {
+     if (digitalRead(mastercod) == HIGH) digitalWrite(mastercod, LOW);
+     else digitalWrite(mastercod, HIGH);
+   }    
   password.reset();
   password1.reset();
    }else{
